@@ -23,13 +23,33 @@ elif s1==s2 or s2==s3 or s1==s3:
 else:
     print("Scalene")
 
-#Task - Fibonacci series and Factorial
+#3. Task -Factorial
 
 no=int(input("enter the number: "))
 val=1
 for i in range(1,no+1):
     val=val*i
 print(val)
+
+# 4 Fibonacci series
+n=int(input("n= "))
+start=0
+next=1
+sum=0
+for i in range(n+1):
+    if(i==1):
+        print(0,end= '')
+    if (i==2):
+        print("1",end =' ')
+    if (i>2):
+        sum=start+next
+        print(sum,end=' ')
+        start=next
+        next=sum
+
+
+
+
 
 
 
